@@ -46,12 +46,17 @@ data/
 ## 🧠 코드 구성
 ```
 src/
-├─ 01_crawling.ipynb              # 리뷰 데이터 수집
-├─ 02_network_data_collect.ipynb  # 네트워크 데이터 수집
-├─ 03_labeling.ipynb              # 라벨링 및 반지도학습
-├─ 05_KoELECTRA_model.ipynb       # 언어·의미적 특성 기반 탐지모델
-├─ 06_analysis_missing.ipynb      # (앙상블/네트워크 분석 복원 예정)
+├─ crawling.py               # 리뷰 데이터 크롤링
+├─ network_data_collect.py   # 네트워크 데이터 수집
+├─ labeling.ipynb            # 라벨링 및 반지도학습
+├─ KoELECTRA_model.py        # 텍스트 기반 모델 학습/추론
+└─ 06_analysis_missing       # (앙상블/네트워크 분석 복원 예정)
 ```
+
+> ℹ️ **왜 .py 인가요?**  
+> 일부 노트북(.ipynb)이 GitHub 미리보기에서 `metadata.widgets` 오류로 깨져 보이는 문제가 있어,  
+> **출력물이 필요 없는 수집/모델 코드들은 안정적인 `.py` 형태로 공개**했습니다.  
+> 실행이 필요하시면 Colab/로컬에서 `.py` 파일을 열어 **셀 단위로 나눠 실행**하시면 됩니다.
 
 ---
 
